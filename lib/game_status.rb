@@ -11,10 +11,12 @@ def won?(board)
     return false
   end
 
-  WIN_COMBINATIONS.each do |combo|
-    if board[combo[0]] == board[combo[1]] &&
-      board[combo[1]] == board[combo[2]]
-      return combo
+  i = 0
+  while i < 8
+    if board[WIN_COMBINATIONS[i][0]] == board[WIN_COMBINATIONS[i][1]] &&
+      board[WIN_COMBINATIONS[i][1]] == board[WIN_COMBINATIONS[i][2]]
+      return WIN_COMBINATIONS[i]
+      i += 1
     end
   end
   
