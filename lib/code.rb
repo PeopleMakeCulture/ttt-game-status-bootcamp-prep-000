@@ -7,3 +7,8 @@ while i < 8
     i += 1
   end
 end
+
+# Not empty
+if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  return false
+end
