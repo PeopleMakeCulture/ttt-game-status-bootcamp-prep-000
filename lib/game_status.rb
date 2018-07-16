@@ -10,4 +10,13 @@ def won?(board)
   if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     return false
   end
+
+  WIN_COMBINATIONS.each do |combo|
+    if board[combo[0]] == board[combo[1]] &&
+      board[combo[1]] == board[combo[2]]
+      return combo
+    end
+  end
+  
+
 end
