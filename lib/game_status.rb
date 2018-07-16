@@ -34,5 +34,4 @@ def winner(board)
     win_array = won?(board)
     return board[win_array[0]]
   end
-
 end
