@@ -14,9 +14,7 @@ def won?(board)
   end
 
   # Not empty
-  if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-    return false
-  end
+  false if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 end
 
