@@ -7,7 +7,7 @@ end
 WIN_COMBINATIONS = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,2]]
 
 def won?(board)
-
+  
   false if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
   WIN_COMBINATIONS.each do |combo|
@@ -21,7 +21,7 @@ def full?(board)
 end
 
 def draw?(board)
-  true if full?(board) && !(won?(board))
+  true if full?(board) == true && won?(board) == false
 end
 
 def over?(board)
