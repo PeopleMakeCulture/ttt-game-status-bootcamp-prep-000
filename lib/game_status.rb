@@ -21,7 +21,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.none?{|i| i == " "}
+  true if board.none?{|i| i == " "}
 end
 
 def draw?(board)
@@ -29,5 +29,5 @@ def draw?(board)
 end
 
 def over?(board)
-  true if the board has been won, is a draw, or is full
+  #true if the board has been won, is a draw, or is full
 end
