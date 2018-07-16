@@ -13,8 +13,8 @@ def won?(board)
     board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O" )
   end
 
-false if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-  
+  false if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
 end
 
 def full?(board)
