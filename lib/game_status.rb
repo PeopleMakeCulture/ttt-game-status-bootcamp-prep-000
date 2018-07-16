@@ -19,6 +19,5 @@ def won?(board)
       i += 1
     end
   end
-  
 
 end
