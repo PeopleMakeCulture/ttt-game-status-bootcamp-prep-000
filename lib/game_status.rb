@@ -30,4 +30,6 @@ def over?(board)
 end
 
 def winner
+  won?(board)
+  
 end
