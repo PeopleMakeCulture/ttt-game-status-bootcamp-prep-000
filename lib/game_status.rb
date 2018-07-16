@@ -25,7 +25,9 @@ def full?(board)
 end
 
 def draw?(board)
-  full?(board) == true && won?(board) == false
+  true if full?(board) == true && won?(board) == false
 end
 
 def over?(board)
+  true if the board has been won, is a draw, or is full
+end
