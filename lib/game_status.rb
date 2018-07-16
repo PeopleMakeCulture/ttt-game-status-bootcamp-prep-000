@@ -30,6 +30,9 @@ def over?(board)
 end
 
 def winner(board)
+  if won?(board)
     win_array = won?(board)
     return board[win_array[0]]
+  end
+
 end
