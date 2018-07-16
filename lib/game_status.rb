@@ -29,7 +29,7 @@ def over?(board)
   true if won?(board) || draw?(board) || full?(board)
 end
 
-def winner
+def winner(board)
   won?(board)
-  
+
 end
